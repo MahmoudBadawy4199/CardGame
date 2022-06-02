@@ -135,12 +135,5 @@ function reset(){
 function playAgain(){
     let start = confirm("Play Again?");
     score = 0;
-    if(start)
-    { 
-        startGame(); 
-    }
-    else
-    {
-         card__wrapper.innerHTML = "";
-    }
+    start ? startGame(): card__wrapper.innerHTML = "";
 }
